@@ -5,7 +5,7 @@
   <title>HTML5 Canvas</title>
 </head>
 <body>
-  <h1>Draw something</h1>
+
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
   const canvas = document.querySelector('#draw');
@@ -61,10 +61,6 @@
   canvas.addEventListener('mouseup', () => isDrawing = false);
   canvas.addEventListener('mouseout', () => isDrawing = false);
 
-  const title = document.querySelector('h1');
-  document.addEventListener('mousedown', (e) =>{
-    title.style.display = 'none';
-  })
 
 </script>
 
